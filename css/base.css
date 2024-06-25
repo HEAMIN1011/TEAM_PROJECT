@@ -149,7 +149,7 @@ h4{font-size: 1rem;}
 
 
 
-.whatonebox{overflow: hidden;margin: 0 -20px;}
+.whatonebox{overflow: hidden; margin: 0 -20px;}
 .whatonebox .item {padding: 0 20px; float: left; width: 20%; position:relative;}
 .whatonebox .item::after {content:''; display:block; width:50px;height: 50px; background:url(/images/mean/whatoneimg6.png) no-repeat 0 0; position:absolute; right:-15px; top: 82px;}
 .whatonebox .item .item_in {width: 200px;margin: 0 auto;}
@@ -180,16 +180,20 @@ h4{font-size: 1rem;}
 
 ----------------------------------------
 
+.container{display: flex;}
+.mobum_wrap{margin-bottom: 90px;}
+.mobum_wrap{display: flex; align-items: center; justify-content: center;}
+.mobum_wrap .mw_box .mw_box5 .mw_box_in{width: 1000px;}
+
+.mw_box .mw_box.mw_box4{size: 100px;}
 
 
-
-
-.mobum_wrap {display: flex;align-items: center;justify-content: center;}
-.mobum_wrap .mw_box {float: left;padding: 0 50px;position: relative;}
+.mobum_wrap {display: flex; align-items: center; justify-content: center;}
+.mobum_wrap .mw_box {float: left; padding: 0 50px; position: relative;}
 /*.mobum_wrap .mw_box.mw_box1:after {content: '';display: block;width: 32px;height: 32px;background: url('../../images/public/sub/mw_plus.png') no-repeat 0 0;position: absolute;right: -16px;top: 50%;margin-top: -16px;}*/
 .mobum_wrap .mw_box.mw_box5:after {content: '';display: block;width: 32px;height: 32px;background: url('/images/mean/whatoneimg7.png') no-repeat 0 0;position: absolute;right: -16px;top: 50%;margin-top: -16px;}
 /*.mobum_wrap .mw_box.mw_box2:after {content: '';display: block;width: 33px;height: 39px;background: url('../../images/public/sub/mw_arrow.png') no-repeat 0 0;position: absolute;right: -15px;top: 50%;margin-top: -20px;}*/
-.mobum_wrap .mw_box_in {width: 220px;border-radius: 25px;}
+.mobum_wrap .mw_box_in {width: 220px;border-radius: 25px;} 
 .mobum_wrap .mw_box.mw_box4 .mw_box_in {width: 396px;}
 .mobum_wrap .mw_box.mw_box5 .mw_box_in {width: 670px;}
 .mw_cont_in {width: 100%;}
@@ -229,8 +233,8 @@ h4{font-size: 1rem;}
 .mobum_wrap .mw_box.mw_box4 .mw_box_in {width: 100%;}
 .mw_box.mw_box4 .mw_item {height: auto;}
 .mw_box.mw_box4 .mw_cont {height: auto;}
-.mobum_wrap .mw_box.mw_box5 .mw_box_in {width: 100%;}
-.mobum_wrap .mw_box_in {width: 100%;}
+/*.mobum_wrap .mw_box.mw_box5 .mw_box_in {width: 100%;}
+.mobum_wrap .mw_box_in {width: 100%;}*/
 
 
 -------------------------------------------------
