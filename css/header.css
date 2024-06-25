@@ -1,0 +1,11 @@
+@charset "utf-8";
+
+#header{background: #438D3B;}
+#header .inner{width: 1570px;}
+#header .logo h1{font-weight: bold; font-family: 'Sriracha', cursive; letter-spacing: 1px;}
+#header .nav a{font-size: 1.2rem; font-weight: bold;}
+#header .nav .lnb{float: left;}
+#header .nav .lnb>a{padding: 40px 50px; text-align: center; color: white;}
+#header .nav .lnb:last-child>a{padding-right: 0;}
+#header .nav .lnb::before{content: '/'; position: absolute; top: 55px; transform: translateY(-50%); color: #ccc; font-weight: 100;}
+#header .nav .lnb:first-child:before{content: '';}
