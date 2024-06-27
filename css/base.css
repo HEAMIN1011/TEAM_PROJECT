@@ -130,12 +130,12 @@ h4{font-size: 1rem;}
 
 
 /*착한가격업소란?*/
-.man{width: 40px; height: 40px;}
-.man img{size: 50px;}
+.girl{height: 100px; margin-left: 50px;}
 .mean{text-align: center;}
-.mean img{overflow-clip-margin: content-box; max-width: 100%;}
+.mean img{overflow-clip-margin: content-box; max-width: 100%; margin-top: 100px;}
 .mean h1{font-size: 5rem; margin: 80px; font-family: "Black Han Sans", sans-serif; font-weight: 200;}
 .mean p{font-size: 2rem; font-family: "Hahmlet", serif;}
+.mean .mg p{ margin-left: 100px;}
 .mean span{color: #152fc2; font-size: 2rem;}
 
 
@@ -251,11 +251,13 @@ h4{font-size: 1rem;}
 -------------------------------------------------
 
 /*모범음식점*/
-
-.mean2{text-align: center;}
-.mean2 h1{ text-align: center; font-size: 5rem; margin: 50px; font-family: "Black Han Sans", sans-serif; font-weight: 200;}
+.man{height: 100px; width: 100px; margin-top: 500px;}
+.man{height: 100px; width: 100px; margin-top: 100px;}
+/* .mean2{text-align: center;} */
+.mean2 h1{ text-align: center; font-size: 5rem; font-family: "Black Han Sans", sans-serif; font-weight: 200;}
 .mean2 h2{text-align:center; font-size: 3rem; margin: 50px; font-family: "Black Han Sans", sans-serif; font-weight: 200;}
 .mean2 p{text-align:center; font-size: 2rem; font-family: "Hahmlet", serif;}
+.mean2 .gj p{ margin-left: 400px;}
 .mean2 span{color: #152fc2; font-size: 2rem;}
 .mean2 img{max-width: 80%;}
 .mean2 img:hover{
@@ -270,7 +272,7 @@ h4{font-size: 1rem;}
     flex-direction: row;
     justify-content: center;
     gap:1rem;
-    padding: 50px;
+    /* padding: 50px; */
 }
 
 .mobum_box{
