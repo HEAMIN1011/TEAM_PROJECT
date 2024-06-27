@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="./css/satisfy.css">
+</head>
+<body>
+
+
+
+    <div class="satisfy">
+        <div class="leftCon qr_hidden">
+            <script type="text/javascript">
+                function satisfy_confirm(){
+                    var fm = document.s_form;
+                    var selChk = document.getElementsByName("chk_point");
+                    for(var i = 0; i<selChk.length; i++){
+                        if(selChk[i].checked == true){
+                            fm.point.value = selChk[i].value;
+                        }
+                    }
+                    fm.action = "satisfy.es?mid=a11206110000&act=ins "
+                    fm.submit();
+                }
+                </script>
+                <h3 class="skip">콘텐츠 만족도 조사</h3>
+                <fieldset>
+                    <legend>콘텐츠 만족도 조사</legend>
+                    <form id="">
+                        <input type="hidden" name="mid" value="a11206110000">
+                        <input type="hidden" name="act" value="ins">
+                        <input type="hidden" name="point" value="0">
+                        <div class="satisfy_list clearfix">
+                            <p class="question">이 페이지에서 제공하는 정보에 만족하십니까?</p>
+                            <div class="input_radio">
+                                <span class="p-form-checkbox">
+                                    <input type="radio" name="chk_point" is="q5" class="p-form-radio__input"
+                                            value="5" checked="checked">
+                                    <label for="q5" class="p-form-radio__label"> 매우만족
+                                    </label>
+                                </span>
+                                <span class="p-form-checkbox">
+                                    <input type="radio" name="chk_point" is="q4" class="p-form-radio__input"
+                                            value="4" checked="checked">
+                                    <label for="q5" class="p-form-radio__label"> 만족
+                                    </label>
+                                </span>
+                                <span class="p-form-checkbox">
+                                    <input type="radio" name="chk_point" is="q3" class="p-form-radio__input"
+                                            value="3" checked="checked">
+                                    <label for="q5" class="p-form-radio__label"> 보통
+                                    </label>
+                                </span>
+                                <span class="p-form-checkbox">
+                                    <input type="radio" name="chk_point" is="q2" class="p-form-radio__input"
+                                            value="2" checked="checked">
+                                    <label for="q5" class="p-form-radio__label"> 불만족
+                                    </label>
+                                </span>
+                                <span class="p-form-checkbox">
+                                    <input type="radio" name="chk_point" is="q1" class="p-form-radio__input"
+                                            value="1" checked="checked">
+                                    <label for="q5" class="p-form-radio__label"> 매우불만족
+                                    </label>
+                                </span>
+                            </div>
+                        </div>
+
+
+                        <label class="blind" for="opinionContents">의견내용</label>
+                        <div class="opinion">
+                            <input type="text" name="contents" id="opinionContents" title="의견을 남겨주세요"
+                                    onkeyup="insertContentsMax('opinionLength2', '100', document.s_form.contents); return false;"
+                                    placeholder="의견을 남겨주세요." class="p-input">
+                            <span class="opinion_submit">
+                                <input type="submit" value="의견등록" onclick="satisfy_confirm(); return false;" class="p-button">
+                            </span>
+                            <span class="length">
+                                <strong>
+                                    <span id="opinionLength2">0</span>
+                                </strong>
+                                "/100"
+                            </span>
+                        </div>
+
+                    </form>
+
+                </fieldset>
+
+
+
+
+
+
+
+
+    <script src="satisfy.js">
+
+    </script
+</body>
+</html>

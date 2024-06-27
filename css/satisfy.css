@@ -1,0 +1,256 @@
+@charset "utf-8";
+
+
+
+/*고객만족*/
+.satisfy .satisfy_list .question {font-size: 0.8rem}
+.satisfy .satisfy_list {padding:3% 3%; padding: 3% 3%;display: flex; flex-direction: column;}
+.satisfy .satisfy_list .input_radio{float: left!important;display: flex; flex-direction: row; align-content: space-between;}
+
+input[type="radio"]:not(old) + label {display: inline-block;padding-left: 20px;background: url(/images/mean/radio_btn.png) no-repeat 0 50%;background-size: 19px;font-size: 13px !important;line-height: 1.7 !important;}
+input[type="radio"]:not(old):checked + label {background: url(/images/mean/radio_btn_check.png) no-repeat 0 50%; background-size: 15px;}
+
+
+
+
+
+
+.satisfy {
+    margin: 50px 0 0;
+    border: 1px solid #c5c9d6;
+    font-size: 0;
+    line-height: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.satisfy .association {
+    position: relative;
+    padding: 29px 29px 19px 235px;
+    border-bottom: 1px solid #c5c9d6;
+}
+
+.satisfy .association:before {
+    display: inline-block;
+    position: absolute;
+    left: 24px;
+    top: 13px;
+    width: 57px;
+    height: 68px;
+    background-repeat: no-repeat;
+    background-image: url('/jares/images/sub/association_icon.png');
+}
+
+.satisfy .association_title {
+    display: inline-block;
+    position: absolute;
+    left: 99px;
+    top: 29px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 32px;
+    letter-spacing: -0.02em;
+    color: #28348a;
+}
+
+.satisfy .association_anchor {
+    float: left;
+    margin: 1px 5px;
+    padding: 3px 12px;
+    border-radius: 15px;
+    border: 1px solid #c5c9d6;
+    font-size: 15px;
+    line-height: 22px;
+    color: #8a8e9a;
+}
+
+.satisfy .satisfy_list {
+    padding: 15px 20px;
+}
+
+.satisfy .satisfy_list .question {
+    float: left;
+    font-size: 15px;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    color: #363c5a;
+}
+
+.satisfy .satisfy_list .input_radio {
+    float: right;
+}
+
+.satisfy .satisfy_list .input_radio .p-form-radio__input:focus + .p-form-radio__label {
+    outline: 2px dashed #333
+}
+
+.satisfy .satisfy_list .input_radio .p-form-radio__label {
+    font-size: 14px;
+    color: #636363;
+    line-height: 1.2;
+}
+
+.satisfy .opinion {
+    display: block;
+    padding: 0 10px 15px;
+}
+
+.satisfy .opinion .p-input {
+    width: calc(100% - 114px);
+    margin-right: 9px;
+    font-size: 14px;
+}
+
+.satisfy .opinion .p-input::placeholder {
+    color: #898d9f;
+}
+
+.satisfy .opinion .p-button {
+    font-size: 15px;
+    padding: 7px 20px;
+    border-color: #7a7d96;
+    color: #363c5a;
+    background-color: #fff;
+    border: 1px solid #999;
+}
+
+.satisfy .qr {
+    width: 15%;
+    min-width: 150px;
+}
+
+.leftCon {
+    width: 83%;
+    border-right: 1px solid #c5c9d6;
+}
+
+.leftCon.qr_hidden {
+    width: 100%;
+    border-right: none;
+}
+
+.satisfy .leftCon fieldset {
+    border-bottom: 1px solid #c5c9d6;
+}
+
+.satisfy .manager_info {
+    position: relative;
+    padding: 20px;
+    /* border-top:1px solid #c5c9d6; */
+    background-color: #f7f7f7;
+}
+
+.satisfy .manager_info>ul>li {
+    float: left;
+    position: relative;
+    padding-right: 40px;
+    padding-left: 24px;
+    font-size: 15px;
+    line-height: 20px;
+    font-weight: 600;
+    margin-top: 6px;
+}
+
+.satisfy .manager_info>ul>li:last-child {
+    padding-right: 0;
+}
+
+.satisfy .manager_info>ul>li:before {
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 1px;
+    width: 17px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-image: url('../images/common/manager_sprite.png');
+}
+
+.satisfy .manager_info>ul>li.n1:before {
+    background-position: left top;
+}
+
+.satisfy .manager_info>ul>li.n2:before {
+    background-position: left top -26px;
+}
+
+.satisfy .manager_info>ul>li.n3:before {
+    background-position: left top -51px;
+}
+
+.satisfy .manager_info>ul>li span {
+    padding-right: 13px;
+    color: #676971;
+    font-weight: 400;
+}
+
+.satisfy .kogl_open {
+    display: inline-block;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    bottom: 0;
+    height: 30px;
+    margin: auto;
+}
+
+.satisfy .kogl_open button {
+    position: relative;
+    padding-right: 21px;
+    background-repeat: no-repeat;
+}
+
+.satisfy .kogl_open button:before {
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 2px;
+    width: 17px;
+    height: 15px;
+    background-image: url('/jares/images/common/manager_sprite.png');
+    background-repeat: no-repeat;
+    background-position: left top -76px;
+}
+
+.satisfy .explanation {
+    display: none;
+    position: absolute;
+    right: 0;
+    top: -34px;
+    padding: 9px 18px;
+    border-radius: 19px;
+    border: 1px solid #7a7d96;
+    background-color: #fff;
+}
+
+.satisfy .explanation:after {
+    display: inline-block;
+    position: absolute;
+    right: 26px;
+    bottom: -6px;
+    width: 8px;
+    height: 6px;
+    background-repeat: no-repeat;
+    background-image: url('/jares/images/sub/kogl_item.png');
+}
+
+.satisfy .explanation span {
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.satisfy .explanation.active {
+    display: block;
+}
+
+.satisfy .manager_info ul.clearfix {
+    display: inline-block;
+}
+
+span.length {
+    display: none;
+}
